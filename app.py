@@ -1,6 +1,3 @@
-
-
-
 rideHeightOK = any
 withAdult = any
 healthHold = any
