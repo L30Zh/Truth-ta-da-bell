@@ -1,3 +1,4 @@
+
 rideHeightOK = any
 withAdult = any
 healthHold = any
@@ -17,6 +18,7 @@ else:
     if input == ("yes"):
         withAdult == True
         input ("Do you have any health issues?")
+        
     elif input == ("no"):
         withAdult == False
     if input == ("no"):
