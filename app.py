@@ -12,24 +12,34 @@ if Dia == ("yes"):
     if input == ("no"):
         healthHold == False
     elif input == ("yes"):
-        healthHold == False
+        healthHold == True
+    if rideHeightOK == True:
+        input ("Do you have any health issues?")
+        if input == ("yes"):
+            healthHold == True
+        else: 
+            if input == ("no"):
+                healthHold == False
 else:
     input ("Are you here with an adult?")
     if input == ("yes"):
         withAdult == True
+    else:
+        if input == ("no"):
+            healthHold == False
+    if withAdult == True:
         input ("Do you have any health issues?")
-        
-    elif input == ("no"):
-        withAdult == False
-    if input == ("no"):
-        healthHold == False
-    elif input == ("yes"):
-        healthHold == True
+        if input == ("yes"):
+            healthHold == True
+        else: 
+            if input == ("no"):
+                healthHold == False
 
 if healthHold == True:
     print("Nah get out")
-elif withAdult or rideHeightOK == True:
+if withAdult or rideHeightOK == True and healthHold != True:
     print("alr get on")
+
 
 
 
