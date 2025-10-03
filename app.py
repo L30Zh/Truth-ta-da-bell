@@ -1,3 +1,6 @@
+
+
+
 rideHeightOK = False
 withAdult = False
 healthHold = False
@@ -21,6 +24,20 @@ elif rideHeightOK or withAdult == True:
     print("alr get on")
 else:
     print("Nah get out")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 """ if rideHeightOK == True and healthHold == False:
     CanRide == True
