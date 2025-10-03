@@ -1,47 +1,26 @@
+rideHeightOK = False
+withAdult = False
+healthHold = False
 
-rideHeightOK = any
-withAdult = any
-healthHold = any
-CanRide =  any
+Dia = input("Are you tall enough for this ride? (yes/no) ")
 
-
-Dia = input ("are you tall enough for this ride?")
 if Dia == ("yes"):
-    rideHeightOK == True
-    input ("Do you have any health issues?")
-    if input == ("no"):
-        healthHold == False
-    elif input == ("yes"):
-        healthHold == True
-    if rideHeightOK == True:
-        input ("Do you have any health issues?")
-        if input == ("yes"):
-            healthHold == True
-        else: 
-            if input == ("no"):
-                healthHold == False
+    rideHeightOK = True
 else:
-    input ("Are you here with an adult?")
-    if input == ("yes"):
-        withAdult == True
-    else:
-        if input == ("no"):
-            healthHold == False
-    if withAdult == True:
-        input ("Do you have any health issues?")
-        if input == ("yes"):
-            healthHold == True
-        else: 
-            if input == ("no"):
-                healthHold == False
+    withAdult = input("Are you here with an adult? (yes/no) ")
+    if withAdult == ("yes"):
+        withAdult = True
+
+healthHold = input("Do you have any health issues? (yes/no) ")
+if healthHold == ("yes"):
+    healthHold = True
 
 if healthHold == True:
     print("Nah get out")
-if withAdult or rideHeightOK == True and healthHold != True:
+elif rideHeightOK or withAdult == True:
     print("alr get on")
-
-
-
+else:
+    print("Nah get out")
 
 """ if rideHeightOK == True and healthHold == False:
     CanRide == True
